@@ -1,0 +1,29 @@
+
+
+Installation
+
+1. Install virtualbox
+
+2. Install composer
+
+3. Install git
+
+4. Create and clone the project folder:
+git clone https://github.com/FELPONE/Laravel-Rate-Limit.git rate-limit
+
+5. Install dependencies (go inside the project folder): 
+composer install
+
+6. Compile homestead:
+php vendor/bin/homestead make
+
+7. Add application ‘domain’ in the hosts file (in Linux debian you can find it in etc/hosts) :
+192.168.10.10  homestead.app
+
+8. Create your environment file (project folder): 
+cp .env.example  .env
+
+9. Run:
+vagrant up
+
+You can now send get requests to http://homestead.app/api/greet/filip
